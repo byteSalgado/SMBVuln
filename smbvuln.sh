@@ -56,7 +56,7 @@ exit
 ;;
 esac
 
-
+clear
 if which msfconsole >/dev/null; then
 sleep 1
 echo -e "$blue(Metasploit)$nc ................................................... Instalado [$green✓$nc]"
