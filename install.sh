@@ -141,7 +141,8 @@ sleep 1
 echo -e "$blue instalando wine en$red 5$blue segundos.."
 sleep 5
 apt-get install wine -y
-apt-get install wine32 -y
+dpkg --add-architecture i386
+apt-get update && apt-get install wine32
 winecfg
 echo -e "$blue Wine instalado correctamente.."
 sleep 3
