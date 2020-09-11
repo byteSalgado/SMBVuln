@@ -155,7 +155,7 @@ cp -r Eternalblue-Doublepulsar-Metasploit /root/
 cd Eternalblue-Doublepulsar-Metasploit
 
 if [ ! -d root/.msf4/modules/exploits ]; then
-mkdir root/.msf4/modules/exploits/
+mkdir /root/.msf4/modules/exploits/
 cd /root/.msf4/modules/exploits/
 mkdir windows
 cd windows
