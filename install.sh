@@ -46,7 +46,9 @@ exit
 ;;
 esac
 
+clear
 echo -e "$blue Actualizando sistemas y repositorios.."
+sleep 3
 apt-get update -y && apt-get upgrade -y
 clear
 echo -e "$blue Repositorios instalados.."
