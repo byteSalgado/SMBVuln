@@ -122,7 +122,7 @@ then
  fi
 
 
-clear
+clear 
 sleep 2
 cowsay -f eyes "SMBVuln Created by facu salgado" | lolcat
 sleep 2
