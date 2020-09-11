@@ -161,6 +161,13 @@ mkdir windows
 cd windows
 mkdir smb
 fi
+
+if [ ! -d root/.msf4/modules/exploits/windows ]; then
+mkdir /root/.msf4/modules/exploits/windows
+cd /root/.msf4/modules/exploits/windows
+mkdir smb
+fi
+
 cd $directory/Eternalblue-Doublepulsar-Metasploit/
 cp eternalblue_doublepulsar.rb /root/.msf4/modules/exploits/windows/smb/
 echo -e "$blue Actualizando modulos metasploit..."
