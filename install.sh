@@ -157,7 +157,7 @@ git clone https://github.com/gh0stsec/Eternalblue-Doublepulsar-Metasploit/
 cp -r Eternalblue-Doublepulsar-Metasploit /root/
 cd Eternalblue-Doublepulsar-Metasploit
 
-if [ ! -d root/.msf4/modules/exploits ]; then
+if [ ! -d /root/.msf4/modules/exploits ]; then
 mkdir /root/.msf4/modules/exploits/
 cd /root/.msf4/modules/exploits/
 mkdir windows
@@ -165,7 +165,7 @@ cd windows
 mkdir smb
 fi
 
-if [ ! -d root/.msf4/modules/exploits/windows ]; then
+if [ ! -d /root/.msf4/modules/exploits/windows ]; then
 mkdir /root/.msf4/modules/exploits/windows
 cd /root/.msf4/modules/exploits/windows
 mkdir smb
